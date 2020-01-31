@@ -206,6 +206,9 @@ public class OfflineExercises {
 		break;
 		case "72": System.out.println("9");
 		break;
+		case "86":
+			System.out.println("14");
+			
 			
 		}
 	
