@@ -1,10 +1,11 @@
 package main;
 
 import java.util.ArrayList;
+import java.util.List;
 
-public class OfflineExercises {
+public class OfflineExercises<Char> {
 	
-
+	
 //	 Given a string, return a string where
 //	 for every char in the original string,
 //	 there are three chars.
@@ -22,6 +23,7 @@ public class OfflineExercises {
 				return "TTThhheee";
 			}
 			}
+		return input;
 			
 	}
 	
@@ -46,22 +48,21 @@ public class OfflineExercises {
 	// getBert("xxbertyy") → ""
 	// getBert("xxbeRTyy") → ""
 
-	public String getBert(String input) {
-		 Char [] chars = input.toCharArray();
-		for (int i = 0; i < chars.length; i--)
-		{
-			if(chars[i]=="e" && chars[i-4] =="c") {
-				System.out.println("");
-				
-			}
-			if(chars[i-5]=="e" && chars[i-10]=="f") {
-				
-			}
+	public boolean getBert(String input) {
+//		char[] chars = input.toCharArray();
+//		for (int i = 0; i < chars.length; i--)
+//		{
+//			if(i=="e" && (i-4) =="c") {
+//				System.out.println("");
+//				
+//			}
+//			if(chars[i-5]=="e" && chars[i-9]=="f") {
+		
 			return true;
-		}
+		
 		}
 		
-	}
+	
 
 	// Given three ints, a b c, one of them is small, one is medium and one is
 	// large. Return true if the three values are evenly spaced, so the
@@ -96,14 +97,14 @@ public class OfflineExercises {
 	// endsDev("everoyonehatesdevforreal") → false
 	// endsDev("devisnotcool") → false
 
-	public boolean endsDev(String input) {
-		for(int i = 0; i< input.length(); i++)
-			if (i==" dev" &&(i =="Dev") {
-				return true;
-			}else {
-			
-		return false;
-			}
+	public void endsDev(String input) {
+		//for(int i = 0; i< input.length(); i++)
+//			//if (i == " dev" &&(i =="Dev") {
+//				return true;
+//			}else {
+//			
+//		return false;
+//			}
 	}
 
 
@@ -137,21 +138,7 @@ public class OfflineExercises {
 			 System.out.println("am I in Amsterdam");
 		 }
 		return i;
-		
-	if (i>2) {
-		System.out.println("I am in Amsterdam am I?");
-			
-		}
-	return i;
 	}
-	
-	if (i=0) {
-			System.out.println("I have been in Amsterdam");
-		}
-	return i;
-	
-	}
-}
 	
 	//given a number 
 	// if this number is divisible by 3 return "fizz"
@@ -175,6 +162,7 @@ public class OfflineExercises {
 		if ((arg1 % 3==0) && (arg1%5==0)) {
 			return "fizzbuzz";
 		}
+		return input;
 	}
 	
 	//Given a string split the string into the individual numbers present
@@ -196,11 +184,11 @@ public class OfflineExercises {
 	    ArrayList <String> numb1= new ArrayList<String>();
 	    String numb3; String numb2;
 	    numb.add("55 72 86");
-	    numb2.add("15 72 80 164");
+	    numb1.add("15 72 80 164");
 	    numb.stream().forEach(sponge -> System.out.println("sponge"));
 	    Object collectors;
-		List<String> passed= numb.stream().filter(numb->!(numb.equals("")))
-	    		.collect(((Object) collectors).toList());
+//		List<String> passed= numb.stream().filter(numb3->!(numb.equals("")))
+//	    		.collect(((Object) collectors).toList());
 		switch(arg1) {
 		case "55" : System.out.println("10");
 		break;
