@@ -17,6 +17,7 @@ public class OfflineExercises<Char> {
 	
 	
 	public String multChar(String input) {
+<<<<<<< HEAD
 		int multchar = 0;
 		int length = input.length();
 		for (int i = 0; i < length; i++) {
@@ -27,6 +28,14 @@ public class OfflineExercises<Char> {
 			multchar++;
 			
 		}
+=======
+		char[] chars = input.toCharArray();
+		for(int i =0; i == chars.length; i ++) {
+			if (chars(i)=="The") {
+				return "TTThhheee";
+			}
+			}
+>>>>>>> c00118f6df97d71f7ce4d2910702b3e32bdbe5de
 		return input;
 			
 	}
@@ -45,6 +54,7 @@ public class OfflineExercises<Char> {
 	// getBert("xxbertyy") → ""
 	// getBert("xxbeRTyy") → ""
 
+<<<<<<< HEAD
 	public static String getBert(String input) {
 		int i, len =input.length();
 		StringBuilder rev= new StringBuilder(len);
@@ -53,6 +63,19 @@ public class OfflineExercises<Char> {
 			
 		}
 		return rev.toString();
+=======
+	public boolean getBert(String input) {
+//		char[] chars = input.toCharArray();
+//		for (int i = 0; i < chars.length; i--)
+//		{
+//			if(i=="e" && (i-4) =="c") {
+//				System.out.println("");
+//				
+//			}
+//			if(chars[i-5]=="e" && chars[i-9]=="f") {
+		
+			return true;
+>>>>>>> c00118f6df97d71f7ce4d2910702b3e32bdbe5de
 		
 		}
 		
@@ -96,6 +119,7 @@ public class OfflineExercises<Char> {
 	// endsDev("everoyonehatesdevforreal") → false
 	// endsDev("devisnotcool") → false
 
+<<<<<<< HEAD
 	public boolean endsDev(String input ) {
 		String input1 = "dev";
 		
@@ -104,6 +128,16 @@ public class OfflineExercises<Char> {
 	 }else {
 		 return false;
 	 }
+=======
+	public void endsDev(String input) {
+		//for(int i = 0; i< input.length(); i++)
+//			//if (i == " dev" &&(i =="Dev") {
+//				return true;
+//			}else {
+//			
+//		return false;
+//			}
+>>>>>>> c00118f6df97d71f7ce4d2910702b3e32bdbe5de
 	}
 
 
@@ -160,11 +194,16 @@ public class OfflineExercises<Char> {
 		if (( arg1 % 3 == 0) && (arg1 % 5 == 0)) {
 			return "fizzbuzz";
 		}
+<<<<<<< HEAD
 		return null;
 		}
 	
 		
 	
+=======
+		return input;
+	}
+>>>>>>> c00118f6df97d71f7ce4d2910702b3e32bdbe5de
 	
 	//Given a string split the string into the individual numbers present
 	//then add each digit of each number to get a final value for each number
@@ -186,7 +225,10 @@ public class OfflineExercises<Char> {
 	    String numb3; String numb2;
 	    numb.add("55 72 86");
 	    numb1.add("15 72 80 164");
+<<<<<<< HEAD
 	    numb.add("555 72 86 45 10");
+=======
+>>>>>>> c00118f6df97d71f7ce4d2910702b3e32bdbe5de
 	    numb.stream().forEach(sponge -> System.out.println("sponge"));
 	    Object collectors;
 //		List<String> passed= numb.stream().filter(numb3->!(numb.equals("")))
